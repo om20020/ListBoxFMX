@@ -8,6 +8,7 @@ untuk komponen menggunakan :
 - TLayout
 - TLabel
 - TToolbar
+
 Tampilan yang dibuat sebagai berikut :
 
 ![image](https://user-images.githubusercontent.com/28913008/175756688-54d8cc02-6d94-4c37-885e-8946271bf1b5.png)
