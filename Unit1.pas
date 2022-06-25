@@ -33,7 +33,7 @@ implementation
 
 {$R *.fmx}
 
-var
+const
   hari : array [1..7] of string = ('Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu');
 
 procedure TForm1.addItem(LstBox:TListBox;AText:String);
