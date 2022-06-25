@@ -41,16 +41,17 @@ var
  lo : TLayout;
  lb : TListBoxItem;
 begin
-  Label1.Text := LstBox.Items.Count.ToString;
-  Label2.Text := AText;
+  Label1.Text   := LstBox.Items.Count.ToString;
+  Label2.Text   := AText;
 
-  lb          := TListBoxItem.Create(ListBox1);
-  lb.Height   := loData.Height;
-  lb.Tag      := LstBox.Items.Count;
+  lb            := TListBoxItem.Create(ListBox1);
+  lb.Height     := loData.Height;
+  lb.Tag        := LstBox.Items.Count;
+  lb.Selectable := True;
 
-  lo          := TLayout(loData.Clone(lb));
-  lo.Align    := TAlignLayout.Client;
-  lo.Visible  := True;
+  lo            := TLayout(loData.Clone(lb));
+  lo.Align      := TAlignLayout.Client;
+  lo.Visible    := True;
 
   lb.AddObject(lo);
   LstBox.AddObject(lb);
